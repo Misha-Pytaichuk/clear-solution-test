@@ -1,0 +1,63 @@
+Request for Postman:
+
+-POST
+  http://localhost:8080/api/user
+  
+  body:
+  {
+      "email":"test1@test.com",
+      "firstName":"test1",
+      "lastName":"test1",
+      "birthDate":"2000-01-01",
+      "address":{
+          "country":"test1",
+          "city":"test1",
+          "street":"test1",
+          "houseNumber":"test1"
+      },
+      "telephoneNumber":"+000000000000"
+  }
+
+
+-GET
+  http://localhost:8080/api/user
+
+body:
+  {
+      "from":"2000-01-01",
+      "to":"2004-01-01"
+  }
+
+
+-PACTH
+  http://localhost:8080/api/user/update/{id}
+  
+  body:
+  {
+      "email":"test2@test.com",
+      "firstName":"test2",
+      "lastName":"test2",
+      "birthDate":"2001-02-02",
+      "address":{
+          "country":"test2",
+          "city":"test2",
+          "street":"test2",
+          "houseNumber":"test2"
+      },
+      "telephoneNumber":"+000000000002"
+  }
+
+
+-DELETE
+  http://localhost:8080/api/user
+
+  body:
+  {
+    "email":"test2@test.com"
+  }
+
+
+
+  
+
+  
